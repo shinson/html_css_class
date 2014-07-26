@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>HTML and CSS Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/presentation.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h1>HTML & CSS</h1>
+      <div id="start">
+      <p style="font-size:72px;">Sonia Hinson</p>
+      <p>GitHub: Shinson | Twitter: @SoniaHinson</p>
+      <p>TechLady Hackathon #2</p>
+      </div>
+    </section>
+	
+	<section class="slide">
+      <h1 class="single">HTML vs. CSS</h1>
+      
+    </section>
+    
+    <section class="slide">
+      <h1 class="single" style="margin:0px;">Hyper Text <span style="color: #33ADAD;">Markup</span> Language</h1>
+    </section>
+	
+	<section class="slide">
+      <h1 class="single" style="margin:0px;">Cascading <span style="color: #33ADAD;">Style</span> Sheets</h1>
+    </section>
+    
+    <section class="slide">
+    	<h1 class="single" style="margin:0px;"><a href = "http://techladyhackathon.org/" target = "_blank" style="font-size:200px;">Let's Check it Out!</a></h1>
+    </section>
+    
+    <section class="slide">
+    	<img src="http://i.kinja-img.com/gawker-media/image/upload/185dpzg5ef6dbjpg.jpg" id="OldSchool"/>
+    </section>
+    
+    <section class="slide">
+    	<h2 style="margin:30px 0; font-size:125px;">Basics</h2>
+    	<ul>
+    		<li><span class="BulletMain">Structure:</span> Layout of the Page</li>
+    		<li><span class="BulletMain">Elements:</span> Tags and Content</li>
+    		<li><span class="BulletMain">Attributes:</span> Explain and Classify</li>	
+    	</ul>
+    
+    </section>
+    
+    <section class="slide">
+    	<code>
+    	<pre>
+<span class="selection">&lt;!DOCTYPE html&gt;</span>
+		
+	&lt;html&gt;
+		
+	&lt;body&gt;
+		&lt;p&gt;Hello World!&lt;p&gt;
+	&lt;/body&gt;
+		
+	&lt;/html&gt;
+		</pre>
+		</code>
+    </section>
+    <section class="slide">
+    	<code>
+    	<pre>
+  &lt;!DOCTYPE html&gt;
+		
+	<span class="selection">&lt;html&gt;</span>
+		
+	&lt;body&gt;
+		&lt;p&gt;Hello World!&lt;p&gt;
+	&lt;/body&gt;
+		
+	<span class="selection">&lt;/html&gt;</span>
+		</pre>
+		</code>
+    </section>
+    
+    <section class="slide">
+    	<code>
+    	<pre>
+  &lt;!DOCTYPE html&gt;
+		
+	&lt;html&gt;
+		
+	<span class="selection">&lt;body&gt;</span>
+		&lt;p&gt;Hello World!&lt;p&gt;
+	<span class="selection">&lt;/body&gt;</span>
+		
+	&lt;/html&gt;
+		</pre>
+		</code>
+    </section>
+    
+    <section class="slide">
+    	<table>
+    		<tr>
+    			<th>Start Tag</th>
+    			<th>Content</th>
+    			<th>End Tag</th>
+    		</tr>
+		<tr>
+    			<td><img src="http://loople.co/img/down_arrow.png" width=200></td>
+    			<td><img src="http://loople.co/img/down_arrow.png" width=200></td>
+    			<td><img src="http://loople.co/img/down_arrow.png" width=200></td>
+    		</tr>
+    		<tr class="BigTable">
+    			<td>&lt;<span class="tag">p</span>&gt;</td>
+    			<td class="middle">Write Here!</td>
+    			<td>&lt;/<span class="tag">p</span>&gt;</td>
+    		</tr>
+    		<tr class="BigTable">
+    			<td>&lt;<span class="tag">a</span> <span class="attribute">href="http"</span>&gt;</td>
+    			<td class="middle">Link Display</td>
+    			<td>&lt;/<span class="tag">a</span>&gt;</td>
+    		</tr>
+    		<tr class="BigTable">
+    			<td>&lt;<span class="tag">img</span> <span class="attribute">src="pic"</span>&gt;</td>
+    			<td></td>
+    			<td></td>
+    		</tr>
+    	</table>
+    </section>
+    
+    <section class="slide">
+    	<h2 style="margin: 0px; padding:0px;">Attributions</h2>
+    		<ul class="long">
+    			<li><span class="BulletMain">Class:</span> Element in a group</li>
+    			<li><span class="BulletMain">Id:</span> Unique element </li>
+    			<li><span class="BulletMain">Style:</span> In-text Styling</li>
+    			<li><span class="BulletMain">Title:</span> Extra Information</li>
+    		</ul>
+    </section>
+    
+    <section class="slide">
+      <img src="http://notanotherhistoryteacher.edublogs.org/files/2012/01/Screen-Shot-2012-01-01-at-1.32.15-PM-1mn112w.png" id="prezs">
+      <code style="font-size:30px"><pre>
+  &lt;div id="BO" class="Prez"
+  style="color:#fff" title="44th"&gt;
+      </pre></code>
+    	
+    </section>
+    
+    <section class="slide">
+    	<img id = "cat" src="http://s3-ec.buzzfed.com/static/2014-07/22/11/enhanced/webdr08/anigif_enhanced-buzz-13689-1406043676-34.gif" alt = "Aldo the Cat" />
+    	<div class="CodeSpace">&lt;img id="cat" class="gif" alt = "Aldo the Cat" title="Twirling Cat" height="600" width="400" &gt;</div>
+    </section>
+    
+    <section class="slide">
+    	<h2>Guess That Tag</h2>
+    	<ol>
+	  <li>h1, h2, h3</h3>
+	  <li>p</h3>
+	  <li>br</h3>
+	  <li>hr</h3>
+	</ol>
+    </section>
+    
+    
+    
+    <section class="slide">
+    <p>"A person who never made a mistake never tried anything new."</p>
+    </br>
+    <p>Albert Einstein</p>
+    <hr>
+    	<code><pre>
+  &lt;p&gt;A person who never made a...&lt;/p&gt;
+  &lt;/br&gt;  
+  &lt;p>Albert Einstein&lt;/p&gt;
+  &lt;hr&gt;
+    </pre></code>
+    </section>
+    
+    <section class="slide">
+    	<h2>Hyperlinks</h2>
+    	<p style="text-align:center;">&lt;<span class="tag">a</span> <span class="attribute">href</span>=<span class="BulletMain">"url"</span> <span class="attribute">target</span>=<span class="BulletMain">"_blank"</span> &gt;<span style="color:#A8A8A8">Link text</span>&lt;/<span class="tag">a</span>&gt;</p>
+    	
+    </section>
+    
+    <section class="slide">
+    <div class="TwoColumns">
+			
+		<div class="col1">
+		<table cellpadding="10" id="ExpTable">
+		<tr id="header">
+  			<th>First Name</th>
+  			<th>Last Name</th> 
+  			<th>Age</th>
+		</tr>
+		<tr>
+  			<td>Jane</td>
+  			<td>Doe</td> 
+  			<td>94</td>
+		</tr>
+		<tr>
+  			<td>John</td>
+  			<td>Doe</td> 
+  			<td>95</td>
+		</tr>
+		</table>
+		</div>
+		<div class="col2">
+	<code>
+			<pre style="width:99%;font-size:30px;">
+&lt;table&gt;
+	&lt;tr&gt;
+  		&lt;th&gt;First Name&lt;/th&gt;
+  		&lt;th&gt;Last Name&lt;/th&gt; 
+  		&lt;th&gt;Age&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+  		&lt;td&gt;Jane&lt;/td&gt;
+  		&lt;td&gt;Doe&lt;/td&gt;
+  		&lt;td&gt;94&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+  		&lt;td&gt;John&lt;/td&gt;
+  		&lt;td&gt;Doe&lt;/td&gt;
+  		&lt;td&gt;95&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+			</pre>
+			</code>
+	</div></div>
+    </section>
+    
+    <section class="slide">
+    <div class="TwoColumns">
+      
+			<p class="InfoList">Unordered List</p>
+			<p class="smaller">Shopping List</p>
+			<ul>
+				<li style="font-size:40px;">Eggs</li>
+				<li style="font-size:40px;">Milk</li>
+			</ul>
+			
+			
+	
+		  
+		
+		<code>
+		<pre style="font-size:30px;">
+&lt;!--Unordered List--&gt;
+			
+  &lt;p>Shopping List&lt;/p&gt;
+      &lt;ul&gt;
+	&lt;li&gt;Eggs&lt;/li&gt;
+	&lt;li&gt;Milk&lt;/li&gt;
+      &lt;/ul&gt;
+
+</pre>
+		</code>
+	</div>
+    </section>
+<section class="slide">
+    <div class="TwoColumns">
+      
+<p class="InfoList">Ordered List</p>
+			<p class="smaller">Recipe</p>
+			<ol>
+				<li style="font-size:40px;">Mix Ingredients</li>
+				<li style="font-size:40px;">Put it in the Oven</li>
+			</ol>
+
+  <code>
+  <pre >			
+&lt;!--Ordered List--&gt;
+  &lt;p&gt;Recipe&lt;/p&gt;
+    &lt;ol&gt;
+	&lt;li>Mix Ingredients&lt;/li&gt;
+	&lt;li>Put it in the Oven&lt;/li&gt;
+    &lt;/ol&gt;
+
+</pre>
+		</code>
+	</div>
+    </section>
+<section class="slide">
+    <div class="TwoColumns">
+<p class="InfoList">Description List</p>
+			<dl>
+				<dt class="smaller">Eggs</dt>
+				<dd>Use both whites and yolks</dd>
+			</dl>
+<code><pre>		  
+&lt;!--Description List--&gt;
+  &lt;dl&gt;
+	&lt;dt&gt;Eggs&lt;/dt&gt;
+	&lt;dd&gt;Use both whites and yolks&lt;/dd&gt;
+  &lt;/dl&gt;
+		</pre>
+		</code>
+      </div>
+    </section>
+    
+    <section class="slide">
+	<div class="TwoColumns">
+	<form>
+		First name: <input type="text" name="firstname"><br>
+		Last name: <input type="text" name="lastname"><br>
+	</form>
+	<br><br><br><br>
+	<code>
+	<pre>
+&lt;form action=""&gt;
+  First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+  Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+ &lt;/form&gt;
+	</pre>
+	</code>
+	</div>
+    </section>
+    
+	<section class="slide">
+	<div class="TwoColumns">
+	  <form style="margin:0 20px;">
+		I Code in  <br>
+		<input type="checkbox" name="vehicle" value="HTML">&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" name="vehicle" value="CSS">&nbsp;&nbsp;&nbsp;CSS 
+		
+	</form>
+	<br><br><br><br>
+<code>
+	<pre>
+&lt;form action=""&gt;
+I Code in 
+&lt;input type="checkbox" name="code" value="HTML"&gt;HTML
+&lt;input type="checkbox" name="code" value="CSS"&gt;CSS 
+&lt;/form&gt;
+	</pre>
+	</code>
+	</div>
+    </section>
+	
+	<section class="slide">
+	<div class="TwoColumns">
+	 <form style="margin:0 20px;"> 
+		I am a<br><input type="radio" name="sex" value="male">&nbsp;&nbsp;&nbsp;Male&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="sex" value="female">&nbsp;&nbsp;&nbsp;Female
+		<br>
+	</form>
+<br><br><br><br>	
+<code>
+	<pre>
+&lt;form action=""&gt;
+I am a 
+&lt;input type="radio" name="sex" value="male"&gt;Male
+&lt;input type="radio" name="sex" value="female"&gt;Female
+&lt;/form&gt;
+	</pre>
+	</code>
+	</div>
+    </section>
+	
+	<section class="slide">
+	<div class="TwoColumns">
+	<form>
+	What State do you Live In:<br>
+		<select name="State">
+		<option value="DC">DC</option>
+		<option value="VA">VA</option>
+		<option value="MD">MD</option>
+		</select>
+	</form>
+<br><br><br><br>
+<code>
+	<pre>
+&lt;form action=""&gt;
+What State do you Live In:
+  &lt;select name="State"&gt;
+	  &lt;option value="DC"&gt;DC&lt;/option&gt;
+	  &lt;option value="VA"&gt;VA&lt;/option&gt;
+	  &lt;option value="MD"&gt;MD&lt;/option&gt;
+&lt;/form&gt;
+	</pre>
+	</code>
+	</div>
+    </section>
+    
+    <section class="slide">
+    <div id="blog">
+      <h2 style="text-align:center">Let's Learn HTML!</h2>
+    <div id="MainPost" style="border-radius:10px;>
+    
+    <p style="background-color:#D11975;"> Hello World! I love to code and want to teach it to the world!</p>
+    	<img src="http://www.iconoglobal.com/uploads/2/8/2/4/28248957/4932736_orig.png" width= 100% ></div>
+    <hr>
+	<div  class="post">
+		<h3 style="font-size:50px;">Let's learn CSS</h3>
+		<p style="font-size:30px;">Let me be the CSS to your HTML.</p>
+		<a href="mailto:sonia.hinson@gmail.com" style="font-size:30px;">Email me here!</a></div></div>
+</section>
+    
+    <section class="slide">
+  <code>
+  <pre style="width:100%;font-size:45px;">
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Blog&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css"
+      href="blog.css"/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div id="MainPost" class="post"&gt;
+    &lt;h1&gt;Let's Learn HTML!&lt;/h1&gt;
+    	&lt;p&gt;Hello World!&lt;/p&gt;
+    	&lt;img src="http://html.jpg"&gt;
+    &lt;/div&gt;
+    &lt;hr&gt;
+      &lt;div  class="post"&gt;
+	&lt;h2&gt;Let's learn CSS&lt;/h2&gt;
+	&lt;p&gt;Let me be the CSS to your HTML.&lt;/p&gt;
+	&lt;a href="mailto:email@gmail.com"&gt;
+	  Email me here!&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </pre></code>
+    </section>
+    
+    <section class="slide">
+		<h1 class="single"><span class="BulletMain">C</span>ascading <span class="BulletMain">S</span>tyle <span class="BulletMain">S</span>heets</h1>
+    </section>
+    
+    <section class="slide">
+    	<h2>"How HTML elements are to be displayed."</h2>
+    	<p style="text-align:right;">- W3 Schools</p>
+    </section>
+    
+    <section class="slide">
+      <table style="padding:20px; margin:10% 0px;">
+    	<tr><td><span class="tag"> p </span> </td><td>{ <span class="attribute">color:</span> </td><td>blue; </td><td><span class="attribute">font-size:</span></td><td> 12px;}</td> </tr>
+	<tr><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td></tr>
+    	<tr><td>selector</td><td> property</td><td> value</td><td> property</td><td> value</td><tr>
+      </table>
+    </section>
+    
+    <section class="slide">
+	      <table style="padding:20px; margin:10% 0px;">
+    	<tr><td><span class="tag"> #rose </span> </td><td>{ <span class="attribute">color:</span> </td><td>red; </td><td><span class="attribute">font-size:</span></td><td> 12px;}</td> </tr>
+	<tr><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td></tr>
+    	<tr><td>id selector</td><td> property</td><td> value</td><td> property</td><td> value</td><tr>
+      </table>
+    </section>
+    
+    <section class="slide">
+	      <table style="padding:20px; margin:10% 0px;">
+    	<tr><td><span class="tag"> .flower </span> </td><td>{ <span class="attribute">border:</span> </td><td>1px solid red; </td><td><span class="attribute">margin:</span></td><td> 0px;}</td> </tr>
+	<tr><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td></tr>
+    	<tr><td>class selector</td><td> property</td><td> value</td><td> property</td><td> value</td><tr>
+      </table>
+    </section>
+    <section class="slide">
+    	<p> You can also specify the element:</p>
+    	<table style="padding:20px; margin:10% 0px;">
+    	<tr><td><span class="tag"> p.flower </span> </td><td>{ <span class="attribute">color:</span> </td><td>#fff; </td><td><span class="attribute">padding:</span></td><td> 5px, 5px;}</td> </tr>
+	<tr><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td></tr>
+    	<tr><td>class selector</td><td> property</td><td> value</td><td> property</td><td> value</td><tr>
+      </table>
+    </section>
+    
+    <section class="slide">
+    	<p> You can also do many slectors:</p>
+    	<table style="padding:20px; margin:10% 0px;">
+    	<tr><td><span class="tag">h1, h2, h3  </span> </td><td>{ <span class="attribute">font-family:</span> </td><td>Arial; }</td>< </tr>
+	<tr><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td><td><img src="http://loople.co/img/down_arrow.png" width=200></td></tr>
+    	<tr><td> selectors</td><td> property</td><td> value</td></tr>
+      </table>
+    </section>
+    
+     <section class="slide">
+    	<p> External Style Sheet</p>
+	<div style="width:100%; margin:auto;">
+    	<img src="http://www.atpm.com/10.05/images/sm-code-editor.gif">
+	</div>
+    </section>
+    
+     <section class="slide">
+    	<p>Internal Style Sheet</p>
+    	<code>
+	<pre>
+&lt;!DOCTYPE html&gt;
+    	
+    &lt;html&gt;
+    
+    &lt;head&gt;
+    
+    &lt;style&gt;
+    
+	h1 {color:white;}
+	h2 {color:blue;}
+    
+    &lt;/style&gt;
+    
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    
+    &lt;p&gt;This is my paragraph.&lt;p&gt;
+    
+    &lt;/body&gt;
+    
+    &lt;/html&gt;
+	</pre>
+    	</code>
+    </section>
+    
+    
+     <section class="slide">
+     <p>Inline</p>
+<code><pre>&lt;p style="color:sienna;">Same ole HTML.&lt;/p></pre></code>
+    	
+    </section>
+    
+     <section class="slide">
+    	<h2>Remember this order...</h2>
+    	<ol>
+    		<li>Browser default</li>
+			<li>External style sheet</li>
+			<li>Internal style sheet</li>
+			<li>Inline style</li>
+    </section>
+    
+     <section class="slide">
+    	<img src="http://www.cssterm.com/uploads/images/box_model.gif" width=1000 style="margin:10%">
+    </section>
+    
+    <section class="slide">
+    	<h2 class="single"><a href="http://www.msf.org/" target="_blank">Let's see it in action</a></h2>
+    </section>
+
+</body>
+</html>
